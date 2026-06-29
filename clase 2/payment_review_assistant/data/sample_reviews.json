@@ -1,0 +1,33 @@
+[
+  {
+    "payment_id": "p-1001",
+    "customer_name": "  ANA_MARIA  ",
+    "amount": 1250000,
+    "currency": "CLP",
+    "channel": "webapp",
+    "tags": [
+      "vip"
+    ],
+    "notes": "priority customer"
+  },
+  {
+    "payment_id": "p-1002",
+    "customer_name": "luis-perez",
+    "amount": 980,
+    "currency": "USD$",
+    "channel": "ios",
+    "tags": [
+      "fraud_watch"
+    ],
+    "notes": "manual note pending"
+  },
+  {
+    "payment_id": "p-1003",
+    "customer_name": "",
+    "amount": 350000,
+    "currency": "$",
+    "channel": "",
+    "tags": [],
+    "notes": ""
+  }
+]
