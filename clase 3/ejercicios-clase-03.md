@@ -19,7 +19,7 @@ Esta clase ya no se centra solo en "explicar archivos". Ahora busca que los alum
 
 Los alumnos deben trabajar en:
 
-- `Ejercicios/reconciliation_legacy_service`
+- `reconciliation_legacy_service`
 
 Y seguir la guia principal:
 

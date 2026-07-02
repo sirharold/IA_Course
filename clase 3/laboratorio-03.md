@@ -11,7 +11,7 @@ Usar GitHub Copilot y Copilot Chat para analizar un servicio legado pequeno y de
 
 ## Carpeta de trabajo
 
-- `Ejercicios/reconciliation_legacy_service`
+- `reconciliation_legacy_service`
 
 ## Resultado esperado
 

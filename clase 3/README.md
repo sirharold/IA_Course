@@ -11,7 +11,7 @@ Material de trabajo para la tercera clase del curso.
 
 ## Carpeta principal para alumnos
 
-- `Ejercicios/reconciliation_legacy_service`
+- `reconciliation_legacy_service`
 
 La idea es que los alumnos abran esa carpeta en Visual Studio Code y trabajen sobre codigo ya preparado para practicar:
 
@@ -30,7 +30,11 @@ La idea es que los alumnos abran esa carpeta en Visual Studio Code y trabajen so
 Dentro de `Ejercicios/` tambien quedan disponibles:
 
 - `plantillas-mermaid/`
-- `reconciliation_legacy_service/docs/incident-investigation-template.md`
-- `reconciliation_legacy_service/docs/change-plan-template.md`
-- `reconciliation_legacy_service/sql/`
-- `reconciliation_legacy_service/etl/`
+- `guia-ejercicios-clase-3.md`
+
+Dentro de `reconciliation_legacy_service/` quedan disponibles los apoyos tecnicos del caso:
+
+- `docs/incident-investigation-template.md`
+- `docs/change-plan-template.md`
+- `sql/`
+- `etl/`

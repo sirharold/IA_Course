@@ -1,7 +1,0 @@
-external_id,amount,currency,source,status,captured_at
-TX-1001,12.990,$,gateway,settled,2026-06-28T10:16:00
-TX-1002,8,500,CLP,gateway,settled,2026-06-28T10:19:00
- TX-1003 ,19.990,CLP,gateway,settled,2026-06-28T10:22:00
-TX-1004,,CLP,gateway,settled,2026-06-28T10:24:00
-TX-1005,USD 15,USD$,gateway,settled,2026-06-28T10:26:00
-TX-1005,15,USD$,gateway,settled,2026-06-28T10:27:00

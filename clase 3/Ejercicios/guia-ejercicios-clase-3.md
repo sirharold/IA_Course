@@ -18,7 +18,7 @@ El foco no es crear software nuevo. El foco es:
 
 Trabaja sobre:
 
-- `reconciliation_legacy_service`
+- `../reconciliation_legacy_service`
 
 ## Archivos principales
 
@@ -56,7 +56,7 @@ No aceptes respuestas de IA si no puedes respaldarlas con:
 
 ## Preparacion
 
-1. Abre la carpeta `reconciliation_legacy_service` en Visual Studio Code.
+1. Abre la carpeta `clase 3/reconciliation_legacy_service` en Visual Studio Code.
 2. Revisa rapidamente la estructura de archivos.
 3. Si quieres validar el comportamiento base, ejecuta:
 
