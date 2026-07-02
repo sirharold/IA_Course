@@ -5,6 +5,7 @@ Repositorio de apoyo para ejercicios y laboratorios del curso.
 ## Carpetas disponibles
 
 - `clase 2/`
+- `clase 3/`
 
 ## Uso esperado
 

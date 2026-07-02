@@ -1,0 +1,4 @@
+2026-06-28T12:10:11Z INFO reconciliation.service finished batch=2026-06-28-noon matched=3 missing=1 mismatches=1 duplicates=1
+2026-06-28T12:10:11Z WARN reconciliation.matcher duplicate external_id detected external_id=TX-1005 source=gateway
+2026-06-28T12:10:11Z WARN reconciliation.matcher amount mismatch external_id=TX-1004 core_amount=12000 gateway_amount=12050
+2026-06-28T12:10:11Z WARN reconciliation.reporting report generated with unresolved discrepancies batch=2026-06-28-noon
