@@ -1,0 +1,22 @@
+2026-06-28T11:01:03Z INFO reconciliation.service starting reconciliation batch=2026-06-28-morning source=gateway_transactions_dirty.csv
+2026-06-28T11:01:03Z INFO reconciliation.loaders reading file path=data/gateway_transactions_dirty.csv
+2026-06-28T11:01:03Z ERROR reconciliation.loaders failed to parse row row_number=6 external_id=TX-1005 field=amount raw_value="USD 15"
+Traceback (most recent call last):
+  File "/app/reconciliation/utils.py", line 32, in normalize_amount
+    return Decimal(sanitized)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/reconciliation/service.py", line 24, in run_with_basic_logging
+    return reconcile(gateway_filename)
+  File "/app/reconciliation/service.py", line 13, in reconcile
+    gateway_rows = load_gateway_transactions(gateway_filename)
+  File "/app/reconciliation/loaders.py", line 31, in load_gateway_transactions
+    return load_transactions(DATA_DIR / filename)
+  File "/app/reconciliation/loaders.py", line 18, in load_transactions
+    "amount": normalize_amount(row.get("amount")),
+  File "/app/reconciliation/utils.py", line 34, in normalize_amount
+    raise ValueError(f"Invalid amount: {raw_value}") from error
+ValueError: Invalid amount: USD 15

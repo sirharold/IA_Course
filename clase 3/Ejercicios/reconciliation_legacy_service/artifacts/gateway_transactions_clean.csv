@@ -1,0 +1,6 @@
+row_number,external_id,amount_raw,amount_clean,currency,status,captured_at
+2,TX-1001,12.990,12990,CLP,settled,2026-06-28T10:16:00
+3,TX-1002,8,8,500,gateway,settled
+4,TX-1003,19.990,19990,CLP,settled,2026-06-28T10:22:00
+6,TX-1005,USD 15,15,USD,settled,2026-06-28T10:26:00
+7,TX-1005,15,15,USD,settled,2026-06-28T10:27:00

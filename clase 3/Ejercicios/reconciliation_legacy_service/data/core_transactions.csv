@@ -1,0 +1,6 @@
+external_id,amount,currency,source,status,captured_at
+TX-1001,12990,CLP,core,posted,2026-06-28T10:15:00
+TX-1002,8500,CLP,core,posted,2026-06-28T10:18:00
+TX-1003,19990,CLP,core,posted,2026-06-28T10:21:00
+TX-1004,12000,CLP,core,posted,2026-06-28T10:23:00
+TX-1005,15,USD,core,posted,2026-06-28T10:25:00
