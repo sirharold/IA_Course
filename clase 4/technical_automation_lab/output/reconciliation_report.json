@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "core_records": 4,
+    "gateway_records": 4,
+    "matched_records": 3,
+    "anomaly_count": 4
+  },
+  "matched_records": [
+    {
+      "external_ref": "tx9001",
+      "core_record_id": "core-1001",
+      "gateway_record_id": "gw-7001",
+      "customer_match": true,
+      "amount_match": true,
+      "status_pair": [
+        "approved",
+        "settled"
+      ]
+    },
+    {
+      "external_ref": "tx9002",
+      "core_record_id": "core-1002",
+      "gateway_record_id": "gw-7002",
+      "customer_match": false,
+      "amount_match": true,
+      "status_pair": [
+        "approved",
+        "settled"
+      ]
+    },
+    {
+      "external_ref": "tx9003",
+      "core_record_id": "core-1003",
+      "gateway_record_id": "gw-7003",
+      "customer_match": true,
+      "amount_match": true,
+      "status_pair": [
+        "reversed",
+        "authorized"
+      ],
+      "status_issue": "status mismatch: core=reversed gateway=authorized"
+    }
+  ],
+  "anomalies": [
+    {
+      "type": "customer_ref_mismatch",
+      "external_ref": "tx9002",
+      "core_customer_ref": "cust002",
+      "gateway_customer_ref": "cust020"
+    },
+    {
+      "type": "status_mismatch",
+      "external_ref": "tx9003",
+      "detail": "status mismatch: core=reversed gateway=authorized"
+    },
+    {
+      "type": "missing_in_gateway",
+      "external_ref": "tx9004",
+      "core_record_id": "core-1004",
+      "detail": "transaction exists in core but not in gateway export"
+    },
+    {
+      "type": "missing_in_core",
+      "external_ref": "tx9999",
+      "gateway_record_id": "gw-7004",
+      "detail": "transaction exists in gateway export but not in core export"
+    }
+  ]
+}

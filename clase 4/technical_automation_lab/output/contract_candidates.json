@@ -1,0 +1,51 @@
+{
+  "expected_by_code": [
+    "amount",
+    "currency",
+    "customer",
+    "items",
+    "orderId",
+    "requestedAt"
+  ],
+  "observed_in_samples": [
+    "amount",
+    "created_at",
+    "currency",
+    "customer",
+    "customer.address",
+    "customer.address.city",
+    "customer.address.country",
+    "customer.address.countryCode",
+    "customer.documentNumber",
+    "customer.document_id",
+    "customer.fullName",
+    "customer.full_name",
+    "items",
+    "items[]",
+    "items[].qty",
+    "items[].quantity",
+    "items[].sku",
+    "orderId",
+    "order_id",
+    "requestedAt",
+    "totalAmount"
+  ],
+  "missing_in_samples": [],
+  "unexpected_in_samples": [
+    "created_at",
+    "customer.address",
+    "customer.address.city",
+    "customer.address.country",
+    "customer.address.countryCode",
+    "customer.documentNumber",
+    "customer.document_id",
+    "customer.fullName",
+    "customer.full_name",
+    "items[]",
+    "items[].qty",
+    "items[].quantity",
+    "items[].sku",
+    "order_id",
+    "totalAmount"
+  ]
+}

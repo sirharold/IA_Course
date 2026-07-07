@@ -1,0 +1,5 @@
+record_id,external_ref,customer_ref,amount,currency,status,occurred_at
+core-1001,TX-9001,CUST-001,125.00,USD,approved,2026-06-21T10:00:00Z
+core-1002,TX-9002,CUST-002,80.00,USD,approved,2026-06-21T10:05:00Z
+core-1003,TX-9003,CUST-003,49.99,USD,reversed,2026-06-21T10:08:00Z
+core-1004,TX-9004,CUST-004,210.00,USD,approved,2026-06-21T10:15:00Z

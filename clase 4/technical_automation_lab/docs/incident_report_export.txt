@@ -1,0 +1,15 @@
+Incidente: INC-401
+Servicio: payments-reconciliation
+Severidad: alta
+Fecha: 2026-06-21 10:35 UTC
+Sintoma: Diferencias entre core y gateway en el cierre diario.
+Causa probable: Export del gateway incluyo registros con normalizacion distinta de customer_ref.
+Accion tomada: Se reproceso el archivo y se genero reporte manual.
+---
+Incidente: INC-402
+Servicio: partner-order-sync
+Severidad: media
+Fecha: 2026-06-22 09:10 UTC
+Sintoma: Ordenes rechazadas por campo requerido ausente en integracion con partner.
+Causa probable: El partner envio document_id en lugar de documentNumber y qty en lugar de quantity.
+Accion tomada: Se levanto ticket con integraciones y se aislaron mensajes fallidos.

@@ -1,0 +1,5 @@
+record_id,external_ref,customer_ref,amount,currency,status,occurred_at
+gw-7001,tx_9001,cust001,125.00,USD,settled,2026-06-21T10:00:03Z
+gw-7002,TX-9002,CUST-020,80.00,USD,settled,2026-06-21T10:05:03Z
+gw-7003,TX-9003,CUST-003,49.99,USD,authorized,2026-06-21T10:08:10Z
+gw-7004,TX-9999,CUST-888,15.00,USD,settled,2026-06-21T10:30:00Z

@@ -1,0 +1,4 @@
+{"timestamp":"2026-06-21T10:31:00Z","level":"warning","event":"customer_ref_normalization","message":"Gateway customer_ref contained unexpected formatting for external_ref=TX-9002"}
+{"timestamp":"2026-06-21T10:32:00Z","level":"error","event":"partner_payload_rejected","message":"Missing required field documentNumber in partner payload for order PO-9001"}
+{"timestamp":"2026-06-21T10:33:00Z","level":"warning","event":"line_item_shape","message":"Observed qty instead of quantity in partner payload for order PO-9001"}
+{"timestamp":"2026-06-21T10:34:00Z","level":"info","event":"reprocess_started","message":"Manual reconciliation run started after nightly discrepancy"}

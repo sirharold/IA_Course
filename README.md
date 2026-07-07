@@ -6,6 +6,7 @@ Repositorio de apoyo para ejercicios y laboratorios del curso.
 
 - `clase 2/`
 - `clase 3/`
+- `clase 4/`
 
 ## Uso esperado
 

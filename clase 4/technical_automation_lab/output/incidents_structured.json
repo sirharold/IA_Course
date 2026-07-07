@@ -1,0 +1,20 @@
+[
+  {
+    "incidente": "INC-401",
+    "servicio": "payments-reconciliation",
+    "severidad": "alta",
+    "fecha": "2026-06-21 10:35 UTC",
+    "sintoma": "Diferencias entre core y gateway en el cierre diario.",
+    "causa_probable": "Export del gateway incluyo registros con normalizacion distinta de customer_ref.",
+    "accion_tomada": "Se reproceso el archivo y se genero reporte manual."
+  },
+  {
+    "incidente": "INC-402",
+    "servicio": "partner-order-sync",
+    "severidad": "media",
+    "fecha": "2026-06-22 09:10 UTC",
+    "sintoma": "Ordenes rechazadas por campo requerido ausente en integracion con partner.",
+    "causa_probable": "El partner envio document_id en lugar de documentNumber y qty en lugar de quantity.",
+    "accion_tomada": "Se levanto ticket con integraciones y se aislaron mensajes fallidos."
+  }
+]
