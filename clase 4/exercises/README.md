@@ -15,4 +15,4 @@ Materiales de ejercicios para la clase 4.
 
 Esta carpeta contiene solo ejercicios y laboratorio.
 
-Los demos tecnicos de la clase 4 no estan incluidos aqui.
+Los demos tecnicos viven en `../demos/`.

@@ -31,13 +31,13 @@ Elegir uno de estos patrones:
 
 ## Artefactos sugeridos
 
-Usar como base los archivos de `codigo/`:
+Usar como base los archivos de `../technical_automation_lab/`:
 
 - `reconcile_transactions.py`
 - `extract_incidents.py`
 - `derive_contract_candidates.py`
 - `anomaly_report.py`
-- instrucciones y prompt files dentro de `codigo/.github/`
+- instrucciones y prompt files dentro de `.github/`
 
 ## Parte 1 - Delimitacion del problema
 

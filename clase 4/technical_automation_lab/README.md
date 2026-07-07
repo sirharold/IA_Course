@@ -21,6 +21,8 @@ Trabajar automatizaciones donde Copilot aporte algo mas que autocompletado:
   - comparacion entre lo que espera el codigo y lo que entregan payloads de ejemplo.
 - `anomaly_report.py`
   - consolidacion de anomalias y logs en un reporte.
+- `output/`
+  - ejemplos de salida regenerables para cada script.
 - `data/`
   - fuentes tabulares y logs.
 - `contracts/`
@@ -38,6 +40,17 @@ python3 extract_incidents.py
 python3 derive_contract_candidates.py
 python3 anomaly_report.py
 ```
+
+## Salidas esperadas
+
+- `output/reconciliation_report.json`
+  - resumen de matching y anomalias de conciliacion.
+- `output/incidents_structured.json`
+  - incidentes estructurados con `quality_assessment`.
+- `output/contract_candidates.json`
+  - diferencias por muestra, mapeos semanticos candidatos y validaciones sugeridas.
+- `output/anomaly_report.md`
+  - hallazgos priorizados con evidencia de logs y siguiente accion sugerida.
 
 ## Criterio didactico
 

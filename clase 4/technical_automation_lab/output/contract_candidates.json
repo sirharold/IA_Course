@@ -3,7 +3,14 @@
     "amount",
     "currency",
     "customer",
+    "customer.address",
+    "customer.address.city",
+    "customer.address.countryCode",
+    "customer.documentNumber",
+    "customer.fullName",
     "items",
+    "items[].quantity",
+    "items[].sku",
     "orderId",
     "requestedAt"
   ],
@@ -30,22 +37,144 @@
     "requestedAt",
     "totalAmount"
   ],
-  "missing_in_samples": [],
-  "unexpected_in_samples": [
+  "missing_in_all_samples": [],
+  "unexpected_in_any_sample": [
     "created_at",
-    "customer.address",
-    "customer.address.city",
     "customer.address.country",
-    "customer.address.countryCode",
-    "customer.documentNumber",
     "customer.document_id",
-    "customer.fullName",
     "customer.full_name",
     "items[]",
     "items[].qty",
-    "items[].quantity",
-    "items[].sku",
     "order_id",
     "totalAmount"
+  ],
+  "sample_analysis": [
+    {
+      "sample_index": 1,
+      "order_hint": "PO-9001",
+      "missing_expected": [
+        "amount",
+        "customer.address.countryCode",
+        "customer.documentNumber",
+        "customer.fullName",
+        "items[].quantity",
+        "orderId",
+        "requestedAt"
+      ],
+      "unexpected_observed": [
+        "created_at",
+        "customer.address.country",
+        "customer.document_id",
+        "customer.full_name",
+        "items[]",
+        "items[].qty",
+        "order_id",
+        "totalAmount"
+      ],
+      "candidate_mappings": [
+        {
+          "expected_path": "amount",
+          "observed_path": "totalAmount",
+          "confidence": "high",
+          "reason": "prefixed amount field used by partner"
+        },
+        {
+          "expected_path": "customer.address.countryCode",
+          "observed_path": "customer.address.country",
+          "confidence": "high",
+          "reason": "country value likely encoded with shorter field name"
+        },
+        {
+          "expected_path": "customer.documentNumber",
+          "observed_path": "customer.document_id",
+          "confidence": "high",
+          "reason": "document identifier with alternate naming"
+        },
+        {
+          "expected_path": "customer.fullName",
+          "observed_path": "customer.full_name",
+          "confidence": "high",
+          "reason": "customer full name with alternate naming"
+        },
+        {
+          "expected_path": "items[].quantity",
+          "observed_path": "items[].qty",
+          "confidence": "high",
+          "reason": "quantity abbreviation used inside line items"
+        },
+        {
+          "expected_path": "orderId",
+          "observed_path": "order_id",
+          "confidence": "high",
+          "reason": "snake_case vs camelCase for order id"
+        },
+        {
+          "expected_path": "requestedAt",
+          "observed_path": "created_at",
+          "confidence": "high",
+          "reason": "timestamp field with alternate naming"
+        }
+      ]
+    },
+    {
+      "sample_index": 2,
+      "order_hint": "PO-9002",
+      "missing_expected": [],
+      "unexpected_observed": [
+        "items[]"
+      ],
+      "candidate_mappings": []
+    }
+  ],
+  "candidate_semantic_mappings": [
+    {
+      "expected_path": "amount",
+      "observed_path": "totalAmount",
+      "confidence": "high",
+      "reason": "prefixed amount field used by partner"
+    },
+    {
+      "expected_path": "customer.address.countryCode",
+      "observed_path": "customer.address.country",
+      "confidence": "high",
+      "reason": "country value likely encoded with shorter field name"
+    },
+    {
+      "expected_path": "customer.documentNumber",
+      "observed_path": "customer.document_id",
+      "confidence": "high",
+      "reason": "document identifier with alternate naming"
+    },
+    {
+      "expected_path": "customer.fullName",
+      "observed_path": "customer.full_name",
+      "confidence": "high",
+      "reason": "customer full name with alternate naming"
+    },
+    {
+      "expected_path": "items[].quantity",
+      "observed_path": "items[].qty",
+      "confidence": "high",
+      "reason": "quantity abbreviation used inside line items"
+    },
+    {
+      "expected_path": "orderId",
+      "observed_path": "order_id",
+      "confidence": "high",
+      "reason": "snake_case vs camelCase for order id"
+    },
+    {
+      "expected_path": "requestedAt",
+      "observed_path": "created_at",
+      "confidence": "high",
+      "reason": "timestamp field with alternate naming"
+    }
+  ],
+  "suggested_validations": [
+    "Validar presencia de campos requeridos antes de transformar el payload.",
+    "Registrar explicitamente equivalencias semanticas aceptadas entre nombres alternativos.",
+    "Separar contradicciones confirmadas de mapeos solo sugeridos por heuristica.",
+    "Agregar tabla de mapeo previo para aliases como `order_id -> orderId` o `qty -> quantity`.",
+    "Verificar estructura de `items` y rechazar payloads que mezclen `quantity` con `qty` sin normalizacion."
   ]
 }

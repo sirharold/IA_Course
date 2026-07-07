@@ -6,7 +6,22 @@
     "fecha": "2026-06-21 10:35 UTC",
     "sintoma": "Diferencias entre core y gateway en el cierre diario.",
     "causa_probable": "Export del gateway incluyo registros con normalizacion distinta de customer_ref.",
-    "accion_tomada": "Se reproceso el archivo y se genero reporte manual."
+    "accion_tomada": "Se reproceso el archivo y se genero reporte manual.",
+    "quality_assessment": {
+      "confidence": "high",
+      "review_required": false,
+      "high_confidence_fields": [
+        "accion_tomada",
+        "causa_probable",
+        "fecha",
+        "incidente",
+        "servicio",
+        "severidad",
+        "sintoma"
+      ],
+      "doubtful_fields": [],
+      "missing_required_fields": []
+    }
   },
   {
     "incidente": "INC-402",
@@ -15,6 +30,21 @@
     "fecha": "2026-06-22 09:10 UTC",
     "sintoma": "Ordenes rechazadas por campo requerido ausente en integracion con partner.",
     "causa_probable": "El partner envio document_id en lugar de documentNumber y qty en lugar de quantity.",
-    "accion_tomada": "Se levanto ticket con integraciones y se aislaron mensajes fallidos."
+    "accion_tomada": "Se levanto ticket con integraciones y se aislaron mensajes fallidos.",
+    "quality_assessment": {
+      "confidence": "high",
+      "review_required": false,
+      "high_confidence_fields": [
+        "accion_tomada",
+        "causa_probable",
+        "fecha",
+        "incidente",
+        "servicio",
+        "severidad",
+        "sintoma"
+      ],
+      "doubtful_fields": [],
+      "missing_required_fields": []
+    }
   }
 ]
