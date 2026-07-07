@@ -39,56 +39,177 @@ Usar como base los archivos de `../technical_automation_lab/`:
 - `anomaly_report.py`
 - instrucciones y prompt files dentro de `.github/`
 
-## Parte 1 - Delimitacion del problema
+## Paso 1. Elegir el caso
 
-### Tarea
+Seleccionar uno de los cuatro patrones de trabajo.
 
-Definir que se quiere automatizar y por que no basta una solucion mecanica trivial.
+Antes de tocar codigo, anotar en 3 a 5 lineas:
 
-### El alumno debe dejar claro
+- que problema tecnico resuelve;
+- que artefactos entran;
+- que salida esperan;
+- por que este caso no es solo una transformacion trivial.
 
-- que entra;
-- que sale;
-- que parte es determinista;
-- que parte requiere interpretacion o contexto;
-- que riesgo tecnico quiere controlar.
+## Paso 2. Abrir artefactos y leer el contexto
 
-## Parte 2 - Implementacion o mejora acotada
+Abrir en Visual Studio Code:
 
-### Tarea
+- el script base relacionado con el caso;
+- los archivos de entrada;
+- si aplica, el prompt file asociado en `../technical_automation_lab/.github/prompts/`.
 
-Tomar uno de los scripts base y hacer una mejora concreta o construir una variante sobre el mismo patron.
+Objetivo de este paso:
 
-### Tipos de mejora validos
+- entender rapidamente el flujo actual;
+- detectar donde hay reglas implicitas;
+- decidir donde conviene intervenir.
 
-- endurecer matching o normalizacion;
-- mejorar estructura de salida;
-- incorporar una validacion nueva;
-- hacer visible una incertidumbre que antes quedaba escondida;
-- separar mejor evidencia y heuristica.
+## Paso 3. Delimitar que parte es determinista y cual requiere IA
 
-## Parte 3 - Validacion y salida
+Escribir una nota breve con dos columnas:
 
-### Tarea
+- parte determinista;
+- parte asistida por IA.
 
-Producir una salida que sirva para revisar o decidir algo.
+Ejemplos:
 
-### La salida debe incluir
+- determinista:
+  - leer archivos;
+  - contar registros;
+  - serializar JSON;
+  - agrupar por tipo.
+- asistida por IA:
+  - criticar heuristicas de matching;
+  - detectar contradicciones de contrato;
+  - proponer validaciones faltantes;
+  - mejorar estructura de salida para decision tecnica.
 
-- resultado principal;
-- al menos tres validaciones;
-- supuestos relevantes;
-- principal limitacion o riesgo abierto.
+## Paso 4. Pedir a Copilot una lectura tecnica del flujo actual
 
-## Entregable esperado
+Usar un prompt como este:
+
+```text
+Revisa este flujo tecnico.
+Necesito que:
+1. Expliques que hace hoy.
+2. Detectes supuestos fragiles o zonas ambiguas.
+3. Propongas una mejora pequena y verificable.
+4. Sugieras validaciones sobre entrada, transformacion y salida.
+No inventes reglas de negocio.
+Separa hechos observables de inferencias.
+```
+
+El objetivo no es aceptar la primera respuesta, sino revisar si:
+
+- entendio bien el flujo;
+- detecto riesgos reales;
+- propuso algo acotado;
+- no sobrecomplico el caso.
+
+## Paso 5. Elegir una sola mejora concreta
+
+Seleccionar una mejora pequena, por ejemplo:
+
+- endurecer una normalizacion;
+- enriquecer la salida con mas contexto;
+- agregar una validacion nueva;
+- separar anomalia confirmada de anomalia sospechosa;
+- hacer visible un campo dudoso o faltante.
+
+No elegir dos o tres mejoras a la vez.
+
+## Paso 6. Pedir a Copilot ayuda para implementar esa mejora
+
+Usar un prompt como este:
+
+```text
+Ayudame a hacer una mejora pequena sobre este script.
+La mejora es:
+[describir la mejora].
+
+Necesito:
+1. Un cambio acotado y verificable.
+2. Que no reescriba todo el archivo.
+3. Que deje visible la validacion o heuristica usada.
+4. Que no agregue dependencias innecesarias.
+```
+
+Revisar el cambio antes de aceptarlo.
+
+## Paso 7. Ejecutar el script
+
+Correr el script relacionado con el caso.
+
+Ejemplos:
+
+```bash
+python3 ../technical_automation_lab/reconcile_transactions.py
+python3 ../technical_automation_lab/extract_incidents.py
+python3 ../technical_automation_lab/derive_contract_candidates.py
+python3 ../technical_automation_lab/anomaly_report.py
+```
+
+Verificar en terminal:
+
+- que el script corre;
+- que no rompe el flujo base;
+- que genera la salida esperada.
+
+## Paso 8. Abrir la salida y validarla
+
+Abrir el archivo generado y revisar al menos estas tres cosas:
+
+1. La salida responde al objetivo original del caso.
+2. Existe evidencia visible de la mejora realizada.
+3. Hay al menos tres validaciones o controles entendibles.
+
+Tipos de validacion aceptables:
+
+- conteo de registros;
+- campos obligatorios;
+- anomalias por tipo;
+- contradicciones detectadas;
+- casos dudosos marcados;
+- warnings o limites del proceso.
+
+## Paso 9. Pedir a Copilot una critica de la salida
+
+Usar un prompt como este:
+
+```text
+Revisa esta salida y este script final.
+Necesito que identifiques:
+1. Que partes son confiables.
+2. Que partes siguen siendo ambiguas o fragiles.
+3. Que validacion adicional agregarias si hubiera tiempo.
+4. Que riesgo tecnico sigue abierto.
+No propongas una reescritura grande.
+```
+
+No es obligatorio implementar una segunda mejora, pero si registrar lo que falto.
+
+## Paso 10. Preparar el entregable final
+
+Cada alumno o pareja debe dejar:
 
 - script o ajuste concreto sobre el codigo base;
 - salida estructurada;
-- mini nota tecnica con:
-  - que problema resuelve;
-  - donde aporta IA;
-  - como se valido;
-  - que sigue siendo incierto.
+- mini nota tecnica de maximo media pagina con:
+  - problema que resolvio;
+  - donde uso Copilot;
+  - que mejora introdujo;
+  - como valido el resultado;
+  - que riesgo o incertidumbre quedo abierta.
+
+## Resultado esperado
+
+Al terminar el laboratorio deberia quedar claro:
+
+- que el caso tenia valor tecnico real;
+- que la IA no se uso para una tarea trivial;
+- que la mejora fue acotada y defendible;
+- que la salida sirve para revisar o decidir algo;
+- que los limites del flujo quedaron explicitados.
 
 ## Pauta de revision docente
 
