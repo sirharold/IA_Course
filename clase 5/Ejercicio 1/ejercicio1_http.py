@@ -4,40 +4,27 @@ import requests
 
 
 def call_get() -> None:
-    response = requests.get(
-        "https://httpbin.org/get",
-        params={
-            "course": "clase5",
-            "exercise": "1",
-            "topic": "http",
-        },
-        timeout=20,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    print("GET")
-    print("status:", response.status_code)
-    print("url:", payload.get("url"))
-    print("args:", payload.get("args"))
-    print()
+    # Hacer una llamada GET a https://httpbin.org/get
+    # Incluir al menos 2 o 3 query params
+    # Validar el status_code o usar raise_for_status()
+    # Convertir la respuesta a JSON
+    # Imprimir solo la informacion relevante:
+    # - status
+    # - url final
+    # - args recibidos
+    pass
 
 
 def call_post() -> None:
-    response = requests.post(
-        "https://httpbin.org/post",
-        json={
-            "user_id": "usr-demo-100",
-            "action": "compare-request-shapes",
-            "source": "class-05",
-        },
-        timeout=20,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    print("POST")
-    print("status:", response.status_code)
-    print("url:", payload.get("url"))
-    print("json:", payload.get("json"))
+    # Hacer una llamada POST a https://httpbin.org/post
+    # Enviar un body JSON con al menos 3 campos
+    # Validar el status_code o usar raise_for_status()
+    # Convertir la respuesta a JSON
+    # Imprimir solo la informacion relevante:
+    # - status
+    # - url final
+    # - json reflejado por la API
+    pass
 
 
 if __name__ == "__main__":
