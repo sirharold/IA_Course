@@ -17,7 +17,7 @@ def build_prompt(text: str) -> str:
 
 def main() -> None:
     api_key = os.getenv("GEMINI_API_KEY")
-    model = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
     if not api_key:
         raise ValueError("GEMINI_API_KEY is not defined")
 
