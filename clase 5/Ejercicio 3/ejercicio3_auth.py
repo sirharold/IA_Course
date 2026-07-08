@@ -5,16 +5,16 @@ import os
 import requests
 
 
-BASE_URL = "http://127.0.0.1:8010"
-
-
 def main() -> None:
+    base_url = os.getenv("API_BASE_URL")
     api_key = os.getenv("DEMO_API_KEY")
+    if not base_url:
+        raise ValueError("API_BASE_URL is not defined")
     if not api_key:
         raise ValueError("DEMO_API_KEY is not defined")
 
     response = requests.post(
-        f"{BASE_URL}/v1/classify-ticket",
+        f"{base_url}/v1/classify-ticket",
         headers={
             "Content-Type": "application/json",
             "X-API-Key": api_key,
