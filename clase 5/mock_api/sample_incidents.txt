@@ -1,0 +1,3 @@
+INC-001 | Payments API timeout after partner response exceeded 30 seconds. Checkout retries are failing and users see duplicate attempts.
+INC-002 | Billing export produced null values in tax_id column after CSV ingestion. Finance team cannot reconcile yesterday data.
+INC-003 | Partner auth credential expired and order sync started returning 401 responses during the night batch.
