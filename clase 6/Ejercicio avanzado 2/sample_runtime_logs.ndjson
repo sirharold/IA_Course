@@ -1,0 +1,7 @@
+{"timestamp":"2026-07-12T09:00:00Z","level":"INFO","service":"billing","correlation_id":"corr-100","message":"Started daily reconciliation"}
+{"timestamp":"2026-07-12T09:01:12Z","level":"ERROR","service":"billing","correlation_id":"corr-101","message":"Timeout calling gateway"}
+{"timestamp":"2026-07-12T09:01:40Z","level":"WARN","service":"billing","correlation_id":"","message":"Retry triggered without owner note"}
+{"timestamp":"2026-07-12T09:03:05Z","level":"ERROR","service":"customer-sync","correlation_id":"corr-102","message":"Invalid customer payload"}
+{"timestamp":"2026-07-12T09:04:22Z","level":"ERROR","service":"customer-sync","correlation_id":"","message":"Downstream API rejected request"}
+{"timestamp":"2026-07-12T09:05:10Z","level":"WARN","service":"reporting","correlation_id":"corr-103","message":"Slow export generation"}
+{"timestamp":"2026-07-12T09:06:33Z","level":"ERROR","service":"billing","correlation_id":"corr-104","message":"Duplicate charge candidate detected"}

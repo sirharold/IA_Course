@@ -1,0 +1,32 @@
+[
+  {
+    "ticket_id": "INC-2001",
+    "service": "billing",
+    "severity": "high",
+    "state": "open"
+  },
+  {
+    "ticket_id": "INC-2002",
+    "service": "customer-sync",
+    "severity": "critical",
+    "state": "in_progress"
+  },
+  {
+    "ticket_id": "INC-2003",
+    "service": "",
+    "severity": "medium",
+    "state": "open"
+  },
+  {
+    "ticket_id": "",
+    "service": "reporting",
+    "severity": "low",
+    "state": "resolved"
+  },
+  {
+    "ticket_id": "INC-2005",
+    "service": "orders",
+    "severity": "high",
+    "state": "open"
+  }
+]

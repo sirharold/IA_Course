@@ -1,0 +1,37 @@
+[
+  {
+    "id": "INC-1001",
+    "status": "open",
+    "severity": "high",
+    "owner": "marcela",
+    "summary": "Payment gateway timeout on checkout"
+  },
+  {
+    "id": "INC-1002",
+    "status": "open",
+    "severity": "critical",
+    "owner": "",
+    "summary": "Customer sync job failed after deploy"
+  },
+  {
+    "id": "INC-1003",
+    "status": "resolved",
+    "severity": "medium",
+    "owner": "diego",
+    "summary": "Mismatched invoice formatting in export"
+  },
+  {
+    "id": "INC-1004",
+    "status": "in_progress",
+    "severity": "high",
+    "owner": "ana",
+    "summary": "Webhook retries causing duplicate updates"
+  },
+  {
+    "id": "INC-1005",
+    "status": "open",
+    "severity": "low",
+    "owner": "",
+    "summary": "Dashboard label missing translation"
+  }
+]
