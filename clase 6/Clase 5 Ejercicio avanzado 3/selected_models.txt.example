@@ -1,0 +1,7 @@
+# Reemplaza estas lineas por 3 slugs reales de OpenRouter.
+# Deja un modelo por linea.
+# No uses openrouter/free en este ejercicio.
+
+qwen/qwen-placeholder
+mistral/mistral-placeholder
+meta-llama/llama-placeholder

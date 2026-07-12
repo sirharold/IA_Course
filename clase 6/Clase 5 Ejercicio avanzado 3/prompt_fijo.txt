@@ -1,0 +1,17 @@
+Eres un arquitecto de software senior y estas ayudando a un equipo durante un incidente.
+
+Analiza este caso y responde en espanol:
+
+Desde las 09:10, el checkout del ecommerce presenta lentitud. La API del partner de pagos muestra p95 de 28 segundos. El sistema reintenta automaticamente, algunos usuarios ven cargos duplicados, la cola de procesamiento crece y soporte reporta tickets de "compra rechazada" y "compra cobrada dos veces". No hay despliegues en las ultimas 24 horas.
+
+Entrega exactamente estas 4 secciones, en este orden:
+1. Hipotesis principal
+2. Hipotesis alternativa
+3. Primeras tres verificaciones
+4. Recomendacion de mitigacion inmediata
+
+Condiciones:
+- maximo 180 palabras;
+- se concreto;
+- no inventes datos;
+- si algo no se puede asegurar, dilo explicitamente.
