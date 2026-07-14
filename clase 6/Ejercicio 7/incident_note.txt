@@ -1,0 +1,5 @@
+Durante la ventana de despliegue de la noche se detectaron multiples reintentos en el servicio de facturacion.
+El flujo de cobro no cayo completamente, pero algunos pagos quedaron en estado pendiente por timeout contra el gateway externo.
+Los logs muestran errores intermitentes entre las 02:14 y las 02:21.
+No hay evidencia de perdida de datos, pero soporte reporto 6 tickets de clientes con demora en confirmacion.
+El equipo aun no determina si el problema fue red, saturacion del gateway o configuracion del retry.

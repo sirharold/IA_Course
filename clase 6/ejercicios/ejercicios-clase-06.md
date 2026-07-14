@@ -352,6 +352,54 @@ No agregues complejidad innecesaria.
 - debe existir al menos un chequeo antes y uno despues;
 - la salida debe ser mas operable que al inicio de la clase.
 
+## Ejercicio 7. Usar Copilot CLI dentro de un script
+
+### Objetivo
+
+Demostrar que GitHub Copilot CLI tambien puede usarse como parte de un script ejecutado desde terminal, para resolver una tarea simple pero visible.
+
+### Carpeta sugerida
+
+- `Ejercicio 7`
+
+### Archivos sugeridos
+
+- `Ejercicio 7/copilot_cli_summary.py`
+- `Ejercicio 7/incident_note.txt`
+
+### Lo que deben hacer
+
+- revisar el script base;
+- confirmar que `copilot` esta disponible en terminal;
+- ejecutar el script para que invoque `copilot -p`;
+- generar un resumen tecnico en Markdown desde un texto de incidente;
+- revisar si la salida es util y consistente.
+
+### Prompt sugerido para Copilot CLI
+
+Este ejercicio no pide escribir el prompt a mano dentro del CLI. El prompt ya vive dentro del script y se ejecuta desde terminal.
+
+Lo que si deben revisar es:
+
+- que tarea esta resolviendo el prompt;
+- que formato de salida pide;
+- que parte sigue siendo responsabilidad del alumno validar.
+
+### Entregable esperado
+
+- script ejecutado desde terminal;
+- archivo `incident_summary.md` generado;
+- breve nota sobre que valor aporto usar Copilot CLI dentro del script.
+
+### Validacion minima
+
+- el script debe fallar con mensaje claro si `copilot` no esta instalado;
+- debe generar un archivo de salida no vacio;
+- la salida debe incluir al menos:
+  - resumen;
+  - severidad sugerida;
+  - siguiente paso recomendado.
+
 ## Ruta sugerida de dificultad
 
 1. Entrar al CLI y entender un comando simple.
@@ -360,11 +408,13 @@ No agregues complejidad innecesaria.
 4. Operar un flujo con variables de entorno y validaciones.
 5. Aplicar una mejora pequena sobre un script existente.
 6. Dejar una operacion reproducible del flujo.
+7. Ejecutar un script que use Copilot CLI como parte del flujo.
 
 ## Criterio docente
 
 - si el tiempo es corto, llegar al menos hasta el ejercicio 4;
 - si el grupo avanza bien, usar los ejercicios 5 y 6 para consolidar repetibilidad;
+- usar el ejercicio 7 como demostracion clara de CLI embebido en automatizacion;
 - privilegiar seguridad operativa y criterio humano por sobre cantidad de comandos;
 - evitar ejercicios donde el CLI haga cambios grandes o dificiles de auditar;
 - conectar siempre cada ejercicio con el flujo real que el alumno trae desde la clase 5.
