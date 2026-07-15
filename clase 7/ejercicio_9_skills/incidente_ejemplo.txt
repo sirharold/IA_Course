@@ -1,0 +1,12 @@
+Incidente reportado:
+
+Desde las 09:20 varios usuarios indican que no pueden completar pagos con tarjeta.
+Algunos mensajes muestran timeout y otros muestran "gateway unavailable".
+El equipo de soporte cree que podria ser un problema de integracion externa, pero no sabe si todos los casos son el mismo error.
+El lider tecnico quiere un resumen inicial rapido con campos clave y dudas abiertas.
+
+Restricciones:
+
+- la severidad final la define una persona;
+- no todos los tickets tienen exactamente el mismo mensaje;
+- el objetivo es ordenar mejor el triage, no cerrar el diagnostico.
