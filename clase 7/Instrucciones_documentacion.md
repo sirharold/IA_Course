@@ -60,11 +60,11 @@ Escribe el documento en formato claro, con titulos y secciones. Si faltan datos,
 ```text
 Ya tengo un documento previo de problema, usuarios y requerimientos para mi proyecto [NOMBRE DEL PROYECTO].
 
-Voy a pegar ese documento a continuacion y quiero que lo uses como base principal:
+El documento anterior esta en esta ruta:
 
-[PEGAR AQUI EL DOCUMENTO 1]
+[RUTA_AL_DOCUMENTO_1]
 
-Tomando ese documento como referencia, ayudame a crear un segundo documento tecnico que incluya:
+Usa ese documento como base principal y ayudame a crear un segundo documento tecnico que incluya:
 
 1. propuesta de solucion;
 2. arquitectura general;
@@ -81,7 +81,7 @@ Si hay mas de una opcion tecnica posible, mencionala brevemente y explica cual r
 
 ### Lo que el alumno debe adaptar
 
-- pegar realmente el documento 1;
+- reemplazar `[RUTA_AL_DOCUMENTO_1]` por la ruta real del documento 1;
 - agregar restricciones tecnicas propias si faltan;
 - aclarar si ya existe un sistema previo;
 - aclarar si hay integraciones obligatorias;
@@ -97,13 +97,13 @@ Ya tengo dos documentos previos para mi proyecto [NOMBRE DEL PROYECTO]:
 1. un documento de problema, usuarios y requerimientos;
 2. un documento de solucion, arquitectura y plan tecnico.
 
-Voy a pegarlos a continuacion y quiero que los uses como base:
+Los documentos estan en estas rutas:
 
-[PEGAR AQUI EL DOCUMENTO 1]
+[RUTA_AL_DOCUMENTO_1]
 
-[PEGAR AQUI EL DOCUMENTO 2]
+[RUTA_AL_DOCUMENTO_2]
 
-Tomando ambos documentos como referencia, ayudame a crear un documento de ejecucion que incluya:
+Usa ambos documentos como base y ayudame a crear un documento de ejecucion que incluya:
 
 1. backlog inicial priorizado;
 2. epicas o bloques principales de trabajo;
@@ -119,7 +119,7 @@ Organiza el resultado de forma clara y practica, pensando en que este documento 
 
 ### Lo que el alumno debe adaptar
 
-- pegar realmente el documento 1 y el documento 2;
+- reemplazar `[RUTA_AL_DOCUMENTO_1]` y `[RUTA_AL_DOCUMENTO_2]` por las rutas reales;
 - tipo de entregables reales;
 - forma de trabajo esperada;
 - prioridad real del backlog;
