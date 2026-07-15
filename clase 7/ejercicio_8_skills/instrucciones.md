@@ -29,8 +29,12 @@ Cuando revises codigo:
 4. Cierra con pruebas o validaciones recomendadas.
 ```
 
-4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
-5. Verifica que el skill quede disponible antes de hacer la comparacion.
+4. Si usas Copilot CLI y ya estabas dentro de una sesion, ejecuta:
+   ```text
+   /skills reload
+   ```
+5. Si usas VS Code o chat integrado, cierra y vuelve a abrir el chat. Si no basta, recarga la ventana de VS Code.
+6. Verifica que el skill quede disponible antes de hacer la comparacion.
 
 ## Instrucciones
 
