@@ -11,7 +11,7 @@ Al terminar, deberias notar si la conversion via MCP deja un contexto mas usable
 ## Instrucciones
 
 1. Usa este archivo PDF como entrada:
-   - [TEMARIO - IA Aplicada Al Desarrollo De Software Con GitHub Copilot..pdf](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/TEMARIO%20-%20IA%20Aplicada%20Al%20Desarrollo%20De%20Software%20Con%20GitHub%20Copilot..pdf)
+   - [temario_curso_github_copilot.pdf](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/ejercicio_3_mcp/temario_curso_github_copilot.pdf)
 2. Abre el PDF y copia manualmente un fragmento de 1 a 2 paginas que hable de objetivos o sesiones.
 3. Sin MCP, pide a Copilot:
    - resumir el contenido;
