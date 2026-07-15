@@ -10,10 +10,25 @@ Al terminar, deberias notar si el skill reduce ambiguedad, ordena mejor la salid
 
 ## Antes de empezar: preparar el skill
 
-1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
-2. Crea o instala un skill de revision de logs en tu entorno.
-3. Si usas skills del proyecto, deja el skill en una carpeta como:
+1. Crea un skill de revision de logs en tu entorno.
+2. Si usas skills del proyecto, deja el skill en una carpeta como:
    - `.github/skills/revision-logs/SKILL.md`
+3. Usa un contenido base como este:
+
+```md
+---
+name: revision-logs
+description: Analiza logs tecnicos y entrega una salida ordenada. Usar cuando se pida revisar logs o incidentes.
+---
+
+Cuando revises logs:
+
+1. Resume hechos observables.
+2. Separa errores, advertencias y dudas.
+3. No inventes causas si no hay evidencia.
+4. Cierra con una validacion minima sugerida.
+```
+
 4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
 5. Verifica que el skill quede disponible antes de hacer la comparacion.
 

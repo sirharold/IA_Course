@@ -10,10 +10,25 @@ Al terminar, deberias evaluar si el skill deja una salida mas estable, mas reusa
 
 ## Antes de empezar: preparar el skill
 
-1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
-2. Crea o instala un skill de documentacion tecnica o lectura estructurada.
-3. Si usas skills del proyecto, deja el skill en una carpeta como:
+1. Crea un skill de documentacion tecnica o lectura estructurada.
+2. Si usas skills del proyecto, deja el skill en una carpeta como:
    - `.github/skills/documentacion-tecnica/SKILL.md`
+3. Usa un contenido base como este:
+
+```md
+---
+name: documentacion-tecnica
+description: Documenta modulos o scripts con una estructura estable. Usar cuando se pida explicar codigo o generar documentacion breve.
+---
+
+Cuando documentes codigo:
+
+1. Explica el objetivo del modulo o script.
+2. Lista entradas, salidas y dependencias visibles.
+3. Marca riesgos o supuestos tecnicos.
+4. Cierra con una recomendacion de validacion.
+```
+
 4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
 5. Verifica que el skill quede disponible antes de hacer la comparacion.
 

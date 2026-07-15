@@ -10,10 +10,25 @@ Al terminar, deberias evaluar si el skill ayuda cuando necesitas repetir muchas 
 
 ## Antes de empezar: preparar el skill
 
-1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
-2. Crea o instala un skill de reporte operativo o status report.
-3. Si usas skills del proyecto, deja el skill en una carpeta como:
+1. Crea un skill de reporte operativo o status report.
+2. Si usas skills del proyecto, deja el skill en una carpeta como:
    - `.github/skills/reporte-operativo/SKILL.md`
+3. Usa un contenido base como este:
+
+```md
+---
+name: reporte-operativo
+description: Genera reportes operativos breves y repetibles. Usar cuando se pida un status report o resumen operativo.
+---
+
+Cuando prepares un reporte:
+
+1. Resume pendientes relevantes.
+2. Marca items sin owner o sin resolver.
+3. Usa una estructura breve y operativa.
+4. Cierra con focos de atencion o siguiente paso.
+```
+
 4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
 5. Verifica que el skill quede disponible antes de hacer la comparacion.
 

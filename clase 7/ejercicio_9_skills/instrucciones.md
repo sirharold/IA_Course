@@ -10,10 +10,25 @@ Al terminar, deberias evaluar si el skill mejora la uniformidad de la salida y r
 
 ## Antes de empezar: preparar el skill
 
-1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
-2. Crea o instala un skill de triage de incidentes o clasificacion inicial.
-3. Si usas skills del proyecto, deja el skill en una carpeta como:
+1. Crea un skill de triage de incidentes o clasificacion inicial.
+2. Si usas skills del proyecto, deja el skill en una carpeta como:
    - `.github/skills/triage-incidentes/SKILL.md`
+3. Usa un contenido base como este:
+
+```md
+---
+name: triage-incidentes
+description: Estandariza el triage inicial de incidentes. Usar cuando se pida clasificar o resumir un incidente tecnico.
+---
+
+Cuando hagas triage:
+
+1. Resume el incidente.
+2. Extrae servicio, error e impacto.
+3. Lista dudas o datos faltantes.
+4. No asignes prioridad final sin advertir supuestos.
+```
+
 4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
 5. Verifica que el skill quede disponible antes de hacer la comparacion.
 
