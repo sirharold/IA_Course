@@ -8,6 +8,13 @@ Comparar una tarea de analisis basada en texto pegado manualmente contra la mism
 
 Al terminar, deberias notar si la conversion via MCP deja un contexto mas usable y reusable que copiar texto manualmente. No importa solo el tamaño del input; importa tambien la legibilidad y la facilidad para volver a usar el contexto.
 
+## Antes de empezar: preparar el MCP
+
+1. Revisa la guia [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+2. Instala o activa `MarkItDown MCP`.
+3. Verifica que el comando o servidor quede disponible en tu entorno.
+4. Comprueba que puedes convertir un PDF pequeno antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Usa este archivo PDF como entrada:

@@ -8,6 +8,13 @@ Usar un MCP de consulta de datos para responder preguntas concretas sobre archiv
 
 Al terminar, deberias ver que MCP puede agregar valor cuando la tarea exige consultar datos de forma precisa y repetible. El beneficio esperado es menos aproximacion manual y mas respuesta verificable.
 
+## Antes de empezar: preparar el MCP
+
+1. Revisa la guia [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+2. Instala o activa un MCP de consulta tabular, idealmente `DuckDB MCP`.
+3. Verifica que el servidor quede visible o disponible en tu cliente.
+4. Comprueba que puedes consultar un CSV sencillo antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Usa estos archivos como fuente:

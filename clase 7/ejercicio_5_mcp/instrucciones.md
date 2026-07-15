@@ -8,6 +8,13 @@ Comparar una respuesta basada en memoria o contexto incompleto contra una respue
 
 Al terminar, deberias entender que MCP puede ser util cuando la informacion puede haber cambiado o cuando necesitas verificar una fuente actual. El beneficio esperado es menos suposicion y mas confirmacion.
 
+## Antes de empezar: preparar el MCP
+
+1. Revisa la guia [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+2. Instala o activa un MCP documental o de lectura web.
+3. La opcion preferida para este ejercicio es `Microsoft Learn MCP`.
+4. Verifica que el servidor aparezca en `MCP: List Servers` o que puedas consultar una pagina real antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. El docente indicara una pagina de documentacion actual para revisar.

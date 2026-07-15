@@ -8,6 +8,14 @@ Tomar un conjunto de tickets o hallazgos locales, construir un backlog tecnico r
 
 Al terminar, deberias tener un backlog preliminar mejor estructurado, con una mezcla de datos locales y una verificacion externa justificada. El objetivo es mostrar que skill y MCP no compiten: uno ayuda a estructurar una tarea repetitiva y el otro ayuda a buscar contexto confiable cuando hace falta.
 
+## Antes de empezar: preparar skill y MCP
+
+1. Revisa [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
+2. Revisa [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+3. Crea o instala un skill de backlog tecnico o reporte operativo.
+4. Instala o activa `Microsoft Learn MCP` u otro MCP documental equivalente.
+5. Verifica que el skill quede disponible y que el MCP documental aparezca activo antes de empezar.
+
 ## Archivos base
 
 Usa estos archivos:

@@ -8,6 +8,14 @@ Construir una pequeña interfaz web o dashboard que muestre, en una sola vista, 
 
 Al terminar, deberias tener una demo visual y entendible. El objetivo no es hacer una aplicación compleja, sino un dashboard pequeño que permita comparar enfoques y discutir cuándo vale la pena usar cada uno.
 
+## Antes de empezar: preparar skill y MCP
+
+1. Revisa [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
+2. Revisa [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+3. Crea o instala al menos un skill que vayas a comparar.
+4. Instala o activa al menos un MCP que vayas a evaluar o descartar explicitamente.
+5. Verifica ambas cosas antes de construir el dashboard.
+
 ## Requisitos sugeridos
 
 Puedes usar una de estas opciones:

@@ -8,6 +8,13 @@ Comparar una respuesta construida solo con un resumen manual contra una respuest
 
 Al terminar, deberias ver que MCP no "piensa mejor" por si solo. Lo que cambia es que puede leer contexto real del issue o PR, por lo que la respuesta deberia ser mas concreta, menos generica y mas accionable.
 
+## Antes de empezar: preparar el MCP
+
+1. Revisa la guia [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+2. Instala o activa `GitHub MCP Server`.
+3. Verifica que aparezca en `MCP: List Servers`.
+4. Comprueba que puedes consultar un repo o issue real antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Pide al docente el issue o PR de practica que usaran todos.

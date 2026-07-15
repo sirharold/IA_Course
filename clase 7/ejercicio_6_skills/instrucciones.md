@@ -8,6 +8,15 @@ Comparar el analisis de logs hecho con un prompt libre contra el analisis de la 
 
 Al terminar, deberias notar si el skill reduce ambiguedad, ordena mejor la salida y te ahorra repetir instrucciones. El objetivo no es probar que el skill siempre gana, sino ver cuando si agrega consistencia.
 
+## Antes de empezar: preparar el skill
+
+1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
+2. Crea o instala un skill de revision de logs en tu entorno.
+3. Si usas skills del proyecto, deja el skill en una carpeta como:
+   - `.github/skills/revision-logs/SKILL.md`
+4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
+5. Verifica que el skill quede disponible antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Usa este archivo:

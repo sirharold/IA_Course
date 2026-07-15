@@ -8,6 +8,13 @@ Usar GitHub MCP para pasar de una descripcion local de un problema a un issue me
 
 Al terminar, deberias entender la diferencia entre pedir a Copilot que redacte texto y usar MCP para convertir esa salida en una accion sobre GitHub. El valor no esta solo en escribir mejor, sino en conectar la tarea con un sistema real.
 
+## Antes de empezar: preparar el MCP
+
+1. Revisa la guia [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+2. Instala o activa `GitHub MCP Server`.
+3. Verifica que aparezca en `MCP: List Servers`.
+4. Comprueba que puedes consultar o crear un issue en un repo de practica antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Abre el archivo [notas_bug_local.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/ejercicio_2_mcp/notas_bug_local.md).

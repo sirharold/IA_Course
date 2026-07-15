@@ -8,6 +8,15 @@ Comparar una tarea repetitiva de resumen operativo hecha con prompt libre contra
 
 Al terminar, deberias evaluar si el skill ayuda cuando necesitas repetir muchas veces una misma estructura de salida y quieres reducir variacion entre ejecuciones.
 
+## Antes de empezar: preparar el skill
+
+1. Revisa la guia [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
+2. Crea o instala un skill de reporte operativo o status report.
+3. Si usas skills del proyecto, deja el skill en una carpeta como:
+   - `.github/skills/reporte-operativo/SKILL.md`
+4. Si ya estabas dentro de una sesion de Copilot CLI, recarga los skills.
+5. Verifica que el skill quede disponible antes de hacer la comparacion.
+
 ## Instrucciones
 
 1. Usa este archivo:

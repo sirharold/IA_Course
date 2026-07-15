@@ -8,6 +8,14 @@ Construir un paquete de triage tecnico a partir de datos reales del curso, usand
 
 Al terminar, deberias haber pasado por una secuencia completa: leer datos, resumir hallazgos con una capacidad reusable, decidir que vale la pena escalar y dejar un issue tecnico claro. El objetivo no es solo obtener una respuesta de Copilot, sino convertir evidencia dispersa en una salida defendible.
 
+## Antes de empezar: preparar skill y MCP
+
+1. Revisa [PREPARACION_SKILLS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_SKILLS.md).
+2. Revisa [PREPARACION_MCPS.md](/Users/haroldgomez/Library/CloudStorage/GoogleDrive-haroldg@gmail.com/My%20Drive/Material%20propio/Curso%20IA%20Github%20Copilot/CursoIA/clase%207/PREPARACION_MCPS.md).
+3. Crea o instala un skill de revision de logs o incidentes.
+4. Instala o activa `GitHub MCP Server`.
+5. Verifica que el skill quede disponible y que GitHub MCP aparezca en `MCP: List Servers` antes de empezar.
+
 ## Starter disponible
 
 Ya tienes una base minima para comenzar:
